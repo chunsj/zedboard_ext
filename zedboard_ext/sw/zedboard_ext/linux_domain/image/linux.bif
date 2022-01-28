@@ -1,0 +1,9 @@
+/* linux */
+the_ROM_image:
+{ 
+  [bootloader] <zedboard_base/boot/zynq_fsbl.elf>
+  <bitstream>
+  <uboot,zedboard_base/boot/u-boot.elf>
+  [load=0x00100000] <dtb,zedboard_base/boot/system.dtb>
+}
+
